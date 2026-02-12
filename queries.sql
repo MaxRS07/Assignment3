@@ -12,8 +12,10 @@ CREATE TABLE Track (
 );
 
 CREATE TABLE MusicVideo (
+    music_video_id PRIMARY KEY
     track_id INT PRIMARY KEY,
     video_director TEXT NOT NULL
+    track_id REFRENCES "Track"("track_id")
 );
 
 /* QUERY 2 */
